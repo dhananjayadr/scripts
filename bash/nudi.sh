@@ -14,7 +14,6 @@ fi
 
 printf "creating nudi folder and unzipping files to it...\n\n"
 if [ -d "nudi" ]; then rm -Rf "nudi" &> /dev/null; mkdir "nudi"; else mkdir "nudi"; fi
-
 unzip nudi.zip -d nudi/ &> /dev/null && rm nudi.zip &> /dev/null
 
 printf "moving files to the keyboard layout folder...\n\n"
